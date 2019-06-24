@@ -21,7 +21,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
  * Configuration properties for the {@link LoadBalancerClient}.
  * @author Ryan Baxter
  */
-@ConfigurationProperties("spring.cloud.loadbalancer.retry")
+@ConfigurationProperties("spring.cloud.loadbalancer.retry") //是否开启重试机制
 public class LoadBalancerRetryProperties {
     private boolean enabled = true;
 
